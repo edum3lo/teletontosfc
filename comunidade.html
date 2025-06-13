@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunidade - Teletontos FC</title>
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Orbitron", sans-serif;
+        background: #14002c;
+        color: #f0f0f0;
+      }
+
+      .hero {
+        background: url("assets/comunidade.png") center/cover no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        padding: 2rem;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(83, 0, 102, 0.3);
+        z-index: 0;
+      }
+
+      .hero-text {
+        position: relative;
+        z-index: 1;
+        background: rgba(20, 0, 44, 0.6);
+        padding: 2rem 3rem;
+        border-radius: 12px;
+        backdrop-filter: blur(4px);
+        color: #fff;
+        text-align: center;
+        max-width: 90%;
+        margin-top: 25vh;
+      }
+
+      .hero-text h1 {
+        font-size: 3rem;
+        color: #ffcc00;
+        text-shadow: 2px 2px 5px #000;
+      }
+
+      .hero-text p {
+        font-size: 1.2rem;
+        color: #ffffff;
+      }
+
+      nav {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 2rem;
+        background: rgba(30, 0, 60, 0.85);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        margin-top: auto;
+        margin-bottom: 2rem;
+      }
+
+      nav a {
+        color: #ffcc00;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ff80b3;
+        transform: scale(1.1);
+      }
+
+      main {
+        padding: 2rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .info {
+        background: #1a0033;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        border-radius: 14px;
+        border: 2px solid #ffcc00;
+        box-shadow: 0 0 18px rgba(255, 204, 0, 0.3);
+        text-align: center;
+      }
+
+      .info h3 {
+        font-size: 2rem;
+        color: #ffcc00;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+      .info:first-of-type h3 {
+        text-align: left;
+      }
+
+      .info ul {
+        list-style: none;
+        padding-left: 0;
+        text-align: left;
+      }
+
+      .info li {
+        margin-bottom: 0.7rem;
+        font-size: 1rem;
+        color: #ddd;
+      }
+
+      .info img {
+        max-width: 100%;
+        border-radius: 12px;
+        margin: 1rem 0;
+        border: 2px solid #ffcc00;
+      }
+
+      .info p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #dddddd;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+
+      footer {
+        background: #110033;
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+      }
+
+      /* Responsivo */
+      @media (max-width: 768px) {
+        .hero-text {
+          margin-top: 35vh;
+          padding: 1.5rem 1rem;
+        }
+
+        .hero-text h1 {
+          font-size: 2rem;
+        }
+
+        .hero-text p {
+          font-size: 1rem;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Comunidade Teletontos</h1>
+        <p>Espaço oficial para o time se manter conectado</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="elenco.html">Elenco</a>
+        <a href="comunidade.html">Comunidade</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="info">
+        <h3>📣 Últimos Avisos</h3>
+        <ul>
+          <li>⚠️ Campeonato dia 16/06</li>
+          <li>🛠️ Treinos no horario do cronograma na liga.</li>
+          <li>✅ Atualização do elenco feita em 13/06/2025.</li>
+        </ul>
+      </section>
+
+      <section class="info">
+        <h3>📅 Próximos Confrontos</h3>
+        <ul>
+          <li>Em breve atualizações</li>
+          <li></li>
+        </ul>
+      </section>
+
+      <section class="info">
+        <h3>📅 Cronograma Oficial</h3>
+        <p><strong>SEGUNDA-FEIRA</strong><br />20:30 às 00:00</p>
+        <p><strong>TERÇA-FEIRA</strong><br />20:30 às 00:00</p>
+        <p><strong>QUINTA-FEIRA</strong><br />20:30 às 00:00</p>
+        <br />
+        <p style="font-size: 0.95rem; color: #ffcc00">
+          OUTROS DIAS LIVRES A NÃO SER SE TIVER CAMPEONATOS MARCADOS PARA ESSES
+          DIAS
+        </p>
+      </section>
+
+      <section class="info">
+        <h3>📜 Regras Oficiais do Time</h3>
+        <p>
+          🤝 <strong>Respeito em Primeiro Lugar:</strong> Trate todos com
+          respeito. Ambiente leve é prioridade.
+        </p>
+        <p>
+          😅 <strong>Zoação? Só Se For Suave:</strong> Brincadeiras são
+          bem-vindas, mas com bom senso.
+        </p>
+        <p>
+          🎧 <strong>Call Limpa Sempre:</strong> Sem gritaria. Fale com clareza
+          e ouça o time.
+        </p>
+        <p>
+          💬 <strong>Discord é Obrigatório:</strong> Toda comunicação é feita
+          por lá. Esteja presente.
+        </p>
+        <p>
+          ⚔️ <strong>Atividade é Essencial:</strong> Seja presente. Faltas sem
+          justificativa geram punições.
+        </p>
+        <p>
+          📆 <strong>Vai Ficar Off? Avise:</strong> Avise os DMs com
+          antecedência se for se ausentar.
+        </p>
+        <p>
+          🏆 <strong>Time Novo, Sonhos Grandes:</strong> Queremos crescer
+          juntos. Campeonatos nos esperam!
+        </p>
+      </section>
+
+      <section class="info">
+        <h3>👮‍♂️ Política de Advertências</h3>
+        <p>
+          <strong>1. Advertência por Falta:</strong> Confirmou e não apareceu
+          sem avisar? Leva advertência.
+        </p>
+        <p>
+          <strong>2. Advertência Comportamental:</strong> Falta de respeito ou
+          conduta negativa não será tolerada.
+        </p>
+        <p>
+          <strong>3. Advertência por Desempenho:</strong> Desempenho ruim
+          constante e sem compromisso também pode gerar advertência.
+        </p>
+      </section>
+
+      <section class="info">
+        <h3>📸 Galeria da Comunidade</h3>
+        <p>
+          Em breve teremos prints e imagens compartilhadas do nosso time em
+          campo!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Teletontos FC - Comunidade Oficial</p>
+    </footer>
+  </body>
+</html>
