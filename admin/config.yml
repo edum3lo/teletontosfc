@@ -2,39 +2,36 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets"
-public_folder: "/assets"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
   - name: "comunidade"
-    label: "Comunidade"
+    label: "Página Comunidade"
     files:
-      - file: "comunidade.html"
+      - file: "content/comunidade/conteudo.json"
         label: "Conteúdo da Comunidade"
-        name: "comunidade_page"
+        name: "conteudo_comunidade"
         fields:
-          - label: "Título"
-            name: "titulo"
-            widget: "string"
-          - label: "Subtítulo"
-            name: "subtitulo"
-            widget: "string"
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitulo", widget: "string" }
           - label: "Últimos Avisos"
             name: "avisos"
             widget: "list"
             fields:
-              - { label: "Aviso", name: "aviso", widget: "string" }
+              - { label: "Texto", name: "texto", widget: "string" }
           - label: "Próximos Confrontos"
             name: "confrontos"
             widget: "list"
             fields:
-              - { label: "Confronto", name: "confronto", widget: "string" }
-          - label: "Cronograma"
-            name: "cronograma"
-            widget: "text"
-          - label: "Regras do Time"
-            name: "regras"
-            widget: "text"
-          - label: "Política de Advertências"
-            name: "advertencias"
-            widget: "text"
+              - { label: "Título", name: "titulo", widget: "string" }
+              - {
+                  label: "Logo do adversário",
+                  name: "logo",
+                  widget: "image",
+                  required: false,
+                }
+              - { label: "Descrição", name: "descricao", widget: "text" }
+          - { label: "Cronograma", name: "cronograma", widget: "text" }
+          - { label: "Regras", name: "regras", widget: "markdown" }
+          - { label: "Advertências", name: "advertencias", widget: "markdown" }

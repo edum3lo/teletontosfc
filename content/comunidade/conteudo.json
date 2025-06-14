@@ -1,0 +1,24 @@
+{
+  "title": "Comunidade Teletontos",
+  "subtitulo": "Espaço oficial para o time se manter conectado",
+  "avisos": [
+    { "texto": "⚠️ Campeonato dia 16/06" },
+    { "texto": "🛠️ Treinos no horário do cronograma na liga." },
+    { "texto": "✅ Atualização do elenco feita em 13/06/2025." }
+  ],
+  "confrontos": [
+    {
+      "titulo": "Teletontos FC x Time Azul",
+      "logo": "/assets/uploads/logo-time-azul.png",
+      "descricao": "Partida válida pela Liga X, dia 18/06 às 21h"
+    },
+    {
+      "titulo": "Teletontos FC x Lendários",
+      "logo": "/assets/uploads/lendarios-logo.png",
+      "descricao": "Amistoso dia 20/06 às 22h"
+    }
+  ],
+  "cronograma": "SEGUNDA-FEIRA: 20:30 às 00:00\nTERÇA-FEIRA: 20:30 às 00:00\nQUINTA-FEIRA: 20:30 às 00:00\nOUTROS DIAS LIVRES SALVO CAMPEONATOS",
+  "regras": "🤝 Respeito em Primeiro Lugar\n😅 Zoação? Só Se For Suave\n🎧 Call Limpa Sempre\n💬 Discord é Obrigatório\n⚔️ Atividade é Essencial\n📆 Vai Ficar Off? Avise\n🏆 Time Novo, Sonhos Grandes",
+  "advertencias": "1. Advertência por Falta: Confirmou e não apareceu sem avisar? Leva advertência.\n2. Advertência Comportamental: Falta de respeito ou conduta negativa não será tolerada.\n3. Advertência por Desempenho: Desempenho ruim constante e sem compromisso também pode gerar advertência."
+}
