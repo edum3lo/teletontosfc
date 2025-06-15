@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: edum3lo/teletontosfc
+  name: git-gateway
   branch: main
 
 media_folder: "assets/uploads"
@@ -14,13 +13,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - {
-          label: "Últimos Avisos",
-          name: "avisos",
-          widget: "list",
-          allow_add: true,
-          fields: [{ label: "Texto", name: "texto", widget: "string" }],
-        }
+      - label: "Últimos Avisos"
+        name: "avisos"
+        widget: "list"
+        fields:
+          - { label: "Texto", name: "texto", widget: "string" }
       - label: "Próximos Confrontos"
         name: "confrontos"
         widget: "list"
