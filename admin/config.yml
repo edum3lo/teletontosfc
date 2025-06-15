@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: edum3lo/teletontosfc
   branch: main
 
 media_folder: "assets/uploads"
@@ -8,30 +9,29 @@ public_folder: "/assets/uploads"
 collections:
   - name: "comunidade"
     label: "Página Comunidade"
-    files:
-      - file: "content/comunidade/conteudo.json"
-        label: "Conteúdo da Comunidade"
-        name: "conteudo_comunidade"
+    folder: "content/comunidade"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - {
+          label: "Últimos Avisos",
+          name: "avisos",
+          widget: "list",
+          allow_add: true,
+          fields: [{ label: "Texto", name: "texto", widget: "string" }],
+        }
+      - label: "Próximos Confrontos"
+        name: "confrontos"
+        widget: "list"
         fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Subtítulo", name: "subtitulo", widget: "string" }
-          - label: "Últimos Avisos"
-            name: "avisos"
-            widget: "list"
-            fields:
-              - { label: "Texto", name: "texto", widget: "string" }
-          - label: "Próximos Confrontos"
-            name: "confrontos"
-            widget: "list"
-            fields:
-              - { label: "Título", name: "titulo", widget: "string" }
-              - {
-                  label: "Logo do adversário",
-                  name: "logo",
-                  widget: "image",
-                  required: false,
-                }
-              - { label: "Descrição", name: "descricao", widget: "text" }
-          - { label: "Cronograma", name: "cronograma", widget: "text" }
-          - { label: "Regras", name: "regras", widget: "markdown" }
-          - { label: "Advertências", name: "advertencias", widget: "markdown" }
+          - { label: "Título", name: "titulo", widget: "string" }
+          - {
+              label: "Logo do adversário",
+              name: "logo",
+              widget: "image",
+              required: false,
+            }
+          - { label: "Descrição", name: "descricao", widget: "text" }
+      - { label: "Regras", name: "regras", widget: "markdown" }
+      - { label: "Advertências", name: "advertencias", widget: "markdown" }
