@@ -8,9 +8,7 @@ public_folder: "/assets/uploads"
 collections:
   - name: "comunidade"
     label: "Página Comunidade"
-    folder: "content/comunidade"
-    create: true
-    slug: "{{slug}}"
+    file: "content/comunidade/comunidade.md" # Define um único arquivo para a página
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - label: "Últimos Avisos"
