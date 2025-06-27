@@ -1,0 +1,54 @@
+ <section class="info">
+        <h3>📅 Confrontos</h3>
+
+        <div class="match-card">
+          <p class="match-date">16/06 - 21:40</p>
+          <div class="teams-wrapper">
+            <div class="team">
+              <img src="assets/logo-nexus.png" alt="Nexus SAF Logo" />
+              <input type="text" placeholder="0" />
+              <p>Nexus SAF</p>
+            </div>
+            <div class="vs-text">X</div>
+            <div class="team">
+              <img src="assets/logo-teletontos.png" alt="Teletontos FC Logo" />
+              <input type="text" placeholder="0" />
+              <p>Teletontos FC</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card">
+          <p class="match-date">17/06 - 22:05</p>
+          <div class="teams-wrapper">
+            <div class="team">
+              <img src="assets/logo-teletontos.png" alt="Teletontos FC Logo" />
+              <input type="text" placeholder="0" />
+              <p>Teletontos FC</p>
+            </div>
+            <div class="vs-text">X</div>
+            <div class="team">
+              <img src="assets/bagual-logo.png" alt="SC Bagual Flow Logo" />
+              <input type="text" placeholder="0" />
+              <p>SC Bagual Flow</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-card">
+          <p class="match-date">17/06 - 22:30</p>
+          <div class="teams-wrapper">
+            <div class="team">
+              <img src="assets/logo-roma.png" alt="Roma Clubs Logo" />
+              <input type="text" placeholder="0" />
+              <p>Roma Clubs</p>
+            </div>
+            <div class="vs-text">X</div>
+            <div class="team">
+              <img src="assets/logo-teletontos.png" alt="Teletontos FC Logo" />
+              <input type="text" placeholder="0" />
+              <p>Teletontos FC</p>
+            </div>
+          </div>
+        </div>
+      </section>
